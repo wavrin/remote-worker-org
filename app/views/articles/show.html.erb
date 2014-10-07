@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="row">
+		<div class="col-md-3 well">
+			
+				<%= render 'layouts/sidebar' %>
+	
+		</div>
+		
+		<div class="col-md-9">
+			
+
+<h1><%= @article.title %></h1>
+
+<h2><small>
+  <%= @article.description %>
+</small></h2>
+
+  <%= @article.published_on %>
+
+<p>
+  <%= markdown @article.body %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
+
+</div>
+</div>

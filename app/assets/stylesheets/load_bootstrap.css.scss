@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Roboto);
+
+$body-bg:                                                   white;
+$font-family-sans-serif:                'Roboto', Helvetica, Arial, sans-serif;
+$navbar-height:                                        45px;
+$navbar-default-bg:                          white;
+$navbar-default-brand-color:      #d35400;
+$brand-primary:                                    #c0392b;
+$jumbotron-bg:                                         #ecf0f1;
+
+@import 'bootstrap';
+
+* {
+	margin: 0;
+	
+}
+
+h1, h2, h3, h4
+{
+  font-family: "Oswald", 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 700;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Roboto", 'Georgia', serif;
+    font-size: 1.0em;
+}
+
+.sidebar p
+{
+  font-family: "Roboto", 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 0.9em;
+	color: gray;
+}
+
+.sidebar h2
+{
+  font-family: "Oswald", 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-weight: 400;	
+}
+
+.sidebar a {
+  font-family: "Oswald", 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-weight: 400;	
+}

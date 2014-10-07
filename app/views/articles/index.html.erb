@@ -1,0 +1,27 @@
+<div class="row">
+		<div class="col-md-3 well">
+			
+				<%= render 'layouts/sidebar' %>
+	
+		</div>
+		
+		<div class="col-md-9">
+			<h2>Articles and Essays</h2>
+
+    <% @articles.each do |article| %>
+
+        <h2><%= link_to article.title, article %></h2>
+        <p><strong><%= article.description %></strong> | <em><%= article.published_on %></em></p>
+        <p><%= markdown truncate(article.body, length: 500) %><%= link_to "Read More...", article %></p>
+
+				
+				<% if current_user %>
+        	<%= link_to 'Edit', edit_article_path(article) %>
+        	<%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>  		<% end %>
+					<hr>
+				
+    <% end %>
+		
+		
+	</div>
+</div>
