@@ -5,12 +5,12 @@
 
     <div class="row">
 			<div class="sidebar">
-      	<div class="col-md-4 well">
-	        <h2>Remote-Worker.org</h2>
-	        <p><strong>Remote-Worker.org is your portal to the wonderful world of remote working. Below are some of the topics we will cover. We will be launching soon!</strong></p>
+      	<div class="col-md-3 well">
+					<h2><%= link_to "Remote-Worker.org", root_path %></h2>
+	        <p><strong>Welcome to Remote-Worker.org - your portal to the wonderful world of remote working. Here you will find news, opinion, discussion, and opportunities ... all related to remote working. But the main goal of this site is to build a strong community around remote working. Join in! </strong></p>
 				</div>
+				
       	<div class="col-md-8">
-
 				 
 			     <% @articles.each do |article| %>
 			         <h2><%= link_to article.title, article %></h2>
@@ -24,16 +24,16 @@
 		</div>
 
 
+<br><br>
 
-
-     <div class="row-fluid">
+     <div class="row">
        <div class="col-md-4 col-md-offset-1">
 				 <div align="center">
 					 
 					 <a href="advocacy"><img src="/assets/advocacy_large.png" alt="..." class="img-circle"></a>
           <h4><%= link_to "Advocacy", advocacy_path %></h4>
 				</div>
-         <p>Information and case studies. Information and case studies. Information and case studies. Information and case studies. Information and case studies. Information and case studies. Information and case studies. Information and case studies. Information and case studies.</p>
+         <p>We are unwavering in our belief that remote working is a viable path for most companies. We will present information and case studies to help guide companies along this path.</p>
 
        </div>
 			 
@@ -44,7 +44,7 @@
 				 	</a>
 				<h4><%= link_to "Employment", employment_path %></h4>
 			</div>
-         <p>Job listings for remote worker-only positions. Job listings for remote worker-only position Job listings for remote worker-only position</p>
+         <p>Guess what? There are already a ton of jobs out there for remote workers! There are a number of job sites that provide these listings and we'll let you know all about them.</p>
 
 
        </div>
