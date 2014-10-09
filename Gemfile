@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'redcarpet'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :development, :test do
   gem 'sqlite3'
@@ -23,4 +24,4 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'bcrypt-ruby', '~> 3.0.0'
+
