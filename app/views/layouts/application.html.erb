@@ -15,7 +15,16 @@
 </div>
 <br><br>
 		 
-		 <p class="text-center">&copy; Remote-Worker.org 2015 | chris@remote-worker.org | <%= link_to 'RSS', '/articles.atom' %>
+		 <p class="text-center">&copy; Remote-Worker.org 2015 | chris@remote-worker.org | <%= link_to 'RSS', '/articles.atom' %> <br>
+			 <a class="twitter-follow-button"
+			   href="https://twitter.com/RemoteWorkerOrg"
+			   data-show-count="false"
+			   data-lang="en">
+			 Follow @RemoteWorkerOrg
+			 </a>
+			 <script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));</script>
+			 
+			 
 		 	<% if current_user %>
 		 	| <%= link_to 'Sign Out', session_path, method: :delete, class: 'button' %> |
 		 	<%= link_to 'New Article', new_article_path %>
@@ -33,5 +42,7 @@
 		   ga('send', 'pageview');
 
 		 </script>
+			 
+			 
 </body>
 </html>
