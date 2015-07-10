@@ -12,12 +12,13 @@ gem 'jbuilder', '~> 1.2'
 gem 'redcarpet'
 gem 'bcrypt-ruby', '~> 3.1.2'
 
-group :development, :test do
+gem 'pg'
+
+group :test do
   gem 'sqlite3'
 end
 
 group :production do
-  gem "pg"
   gem 'rails_12factor'
 end
 group :doc do
